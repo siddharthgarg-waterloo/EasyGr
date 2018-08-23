@@ -1,0 +1,169 @@
+* {
+  padding: 0px;
+  border: 0px;
+  margin: 0px;
+}
+
+
+
+body {
+  background-image: url(back-2.jpg);
+  color: #36486b;
+}
+
+.madeby {
+  color: white;
+}
+
+.heading1 {
+  color: white;
+  text-align: center;
+  font: 500 50px Serif, Arial, Helvetica;
+  line-height: 80px;
+  width: 100%;
+}
+
+.box-1 {
+  background-image: url(head.jpg);
+}
+
+.box-2 {
+  margin: auto;
+  color: black;
+  border: 1.5px black dashed;
+  border-width: thin;
+  padding: 10px;
+  border-radius: 15px;
+  width: 95%;
+}
+
+.heading2 {
+  color: black;
+  padding-left: 20px;
+  font: 500 30px Serif, Arial, Helvetica;
+  text-decoration: underline;
+  text-decoration-style: solid;
+}
+
+
+.instructions {
+  color: black;
+  padding-left: 20px;
+  font: 400 20px Serif, Arial, Helvetica;
+}
+
+
+.additional {
+  color: black;
+  padding-left: 20px;
+  font: 400 18px Serif, Arial, Helvetica;
+  font-style: italic;
+}
+
+.tabhead {
+  font: 100 22px Serif, Arial, Helvetica;
+  text-align: center;
+  font-weight: lighter;
+}
+
+
+table {
+  width: 90%;
+  margin: auto;
+  text-align:center;
+  height: 30px;
+  color: white;
+}
+
+th {
+  height: 25px;
+  background-image: url(head.jpg);
+  width: 30%
+}
+
+/*table, th, td {
+  border: 1px black solid;
+} */
+
+.blankrow {
+  height: 10px;
+}
+
+.fields input{
+  width: 80%;
+  height: 30px;
+  background-color: none;
+  border: 1px black solid;
+  font: 400 20px Serif, Arial, Helvetica;
+  text-align: center;
+}
+
+.lastrow {
+  height: 25px;
+  background-image: url(head.jpg);
+  align-content: center;
+}
+
+.addrow {
+  background-image: url(head.jpg);
+  color: white;
+  text-decoration: underline;
+  border: none;
+  padding: 7px 15px;
+}
+
+.addrow:hover {
+  color: #3399ff;
+  cursor: pointer;
+}
+
+.optional {
+  width: 20%;
+  height: 25px;
+  background-color: none;
+  border: 1px black solid;
+  font: 400 20px Serif, Arial, Helvetica;
+  text-align: center;
+}
+
+.submit {
+  width: 30%;
+  height: 30px;
+  background-image: url(head.jpg);
+  color: white;
+  font: 400 20px Serif, Arial, Helvetica;
+  text-align: center;
+}
+
+.clr {
+    width: 30%;
+    height: 30px;
+    background-image: url(head.jpg);
+    color: white;
+    font: 400 20px Serif, Arial, Helvetica;
+    text-align: center;
+  }
+
+.endbut {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.clr:hover {
+  color: #3399ff;
+  cursor: pointer;
+}
+
+.submit:hover {
+  color: #3399ff;
+  cursor: pointer;
+}
+
+.space {
+  width: 10px;
+}
+
+/*table,th,td {
+  border: black solid 1px;
+}*/

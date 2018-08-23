@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="An easy grade calculator">
+    <meta name="keywords" content="grade, convertor, mark, calculate, gpa">
+    <meta name="author" content="Siddharth Garg">
+    <title>EasyGr</title>
+    <link rel="icon" type="image/gif/png" href="logo.jpg">
+    <link rel="stylesheet" type="text/css" href="grades.css">
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div class="box-1">
+    <p class="madeby">made by Siddharth Garg</p>
+    <h1 class="heading1">EasyGr</h1>
+    </div>
+
+    <br>
+
+    <div class="box-2">
+      <h2 class="heading2">Instructions:</h2>
+      <br>
+      <p class="instructions">Step1: Please enter the grades received and the weightage
+        they will have on the determination of your overall grade.</p>
+        <p class ="instructions"> Step2: Then fill in the optional fields if desired.
+          <br>
+          Step3: On pressing the compute button, your average so far will be displayed along
+          with answers to any of the answered optional fields. </p>
+          <br>
+      <p class="additional"> Caution: Every grade entered must be non-negative and
+      every percentage should be positive. Every row not filled completely will be ignored.</p>
+    </div>
+
+    <br>
+
+    <div class="tabhead">
+
+      <table id="mytable">
+    <thead>
+      <tr>
+        <th>Assignment (optional)</th>
+        <th>Grade</th>
+        <th>Weight (%)</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="blankrow">
+        <td></td>
+      </tr>
+      <tr id="r0">
+      <td>
+        <form method="post" class="fields">
+          <input type="text" name="name" id="n0"
+          placeholder=" Assignment Name">
+        </form>
+      </td>
+      <td>
+        <form method="post" class="fields">
+          <input type="number" name="grade" id="g0"
+          placeholder=" Grade Received">
+        </form>
+      </td>
+      <td>
+        <form method="post" class="fields">
+          <input type="number" name="weight" id="w0"
+          placeholder=" Weight of Assignment">
+        </form>
+      </td>
+    </tr>
+    <tr class="blankrow">
+      <td></td>
+    </tr>
+    <tr>
+      <td class ="lastrow">
+        <input type="button" class="addrow" value="Add Another Assignment"
+        onclick="insRow('mytable')">
+      </td>
+      <td class ="lastrow">
+        <input type="button" class="addrow" value="Remove Last Assignment"
+        onclick="remRow('mytable')"></td>
+      <td class ="lastrow"></td>
+    </tr>
+    </tbody>
+  </table>
+  <br>
+  </div>
+
+  <div class="box-2">
+    <p class="instructions">Optional: Average grade required on remaining assignments to achieve a
+      desired average of  <input type="number" class ="optional" id="option1"
+    placeholder=" Grade Wanted">.
+  </p>
+  <br>
+  <p class="instructions">Optional: Overall grade if recived grade on remaining assignments is
+    <input type="number" class ="optional" id="option2" placeholder=" Remaining Grade">.
+  </p>
+  </div>
+
+  <div class="endbut">
+
+  <input type="submit" class="submit" value="Compute" onclick="compgrade('mytable')">
+  <div class="space">
+
+  </div>
+  <input type="button" class="clr" value="Clear" onclick="clear_fields('mytable')">
+
+</div>
+
+  </body>
+</html>
